@@ -1,51 +1,46 @@
 package com.team4.model;
 
-import com.team4.config.SingletonConnection;
-
-import java.sql.Connection;
-
 public class Wallet {
-    private int id;
-    private String name;
+    private int id_wallet;
+    private String name_wallet;
+    private CurrencyWallet currencyWallet;
+    private UserWallet userWallet;
     private double balance;
     private String description;
-    private User user;
-    private CurrencyWallet currencyWallet;
 
     public Wallet() {
     }
 
-    public Wallet(String name, double balance, String description, User user, CurrencyWallet currencyWallet) {
-        this.name = name;
+    public Wallet(String name_wallet, CurrencyWallet currencyWallet, UserWallet userWallet, double balance, String description) {
+        this.name_wallet = name_wallet;
+        this.currencyWallet = currencyWallet;
+        this.userWallet = userWallet;
         this.balance = balance;
         this.description = description;
-        this.user = user;
-        this.currencyWallet = currencyWallet;
     }
 
-    public Wallet(int id, String name, double balance, String description, User user, CurrencyWallet currencyWallet) {
-        this.id = id;
-        this.name = name;
+    public Wallet(int id_wallet, String name_wallet, double balance, String description) {
+        this.id_wallet = id_wallet;
+        this.name_wallet = name_wallet;
         this.balance = balance;
         this.description = description;
-        this.user = user;
-        this.currencyWallet = currencyWallet;
     }
 
-    public int getId() {
-        return id;
+    public Wallet(String name_wallet, double balance, String description) {
+        this.name_wallet = name_wallet;
+        this.balance = balance;
+        this.description = description;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public Wallet(int id_wallet, String name_wallet, String description) {
+        this.id_wallet = id_wallet;
+        this.name_wallet = name_wallet;
+        this.description = description;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public Wallet(String name_wallet, String description) {
+        this.name_wallet = name_wallet;
+        this.description = description;
     }
 
     public double getBalance() {
@@ -56,20 +51,28 @@ public class Wallet {
         this.balance = balance;
     }
 
+    public int getId_wallet() {
+        return id_wallet;
+    }
+
+    public void setId_wallet(int id_wallet) {
+        this.id_wallet = id_wallet;
+    }
+
+    public String getName_wallet() {
+        return name_wallet;
+    }
+
+    public void setName_wallet(String name_wallet) {
+        this.name_wallet = name_wallet;
+    }
+
     public String getDescription() {
         return description;
     }
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
     }
 
     public CurrencyWallet getCurrencyWallet() {
@@ -80,15 +83,11 @@ public class Wallet {
         this.currencyWallet = currencyWallet;
     }
 
-    @Override
-    public String toString() {
-        return "Wallet{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", balance=" + balance +
-                ", description='" + description + '\'' +
-                ", user=" + user +
-                ", currencyWallet=" + currencyWallet +
-                '}';
+    public UserWallet getUserWallet() {
+        return userWallet;
+    }
+
+    public void setUserWallet(UserWallet userWallet) {
+        this.userWallet = userWallet;
     }
 }

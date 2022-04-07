@@ -1,4 +1,5 @@
-use walletmanagement;
+use
+walletmanagement;
 
 -- Thêm dữ liệu vào table USER
 insert into user (name_user, password)
@@ -19,9 +20,11 @@ insert into currency(name_currency)
 values ('USD');
 
 -- Thêm dữ liệu vào table CATEGORY
-# insert into category(name)
+#
+insert into category(name)
 # values ('food');
-insert into category(name_category, note) VALUES ('Coffee','25k per day, 1 month 750k');
+insert into category(name_category, note)
+VALUES ('Coffee', '25k per day, 1 month 750k');
 
 -- Thêm dữ liệu vào table TRANSACTION
 -- Income: Thu; Expense: Chi

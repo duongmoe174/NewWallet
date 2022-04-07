@@ -10,15 +10,22 @@ public class User {
         this.name = name;
     }
 
-    public User(int id) {
-        this.id = id;
-    }
-
     public User(String name) {
         this.name = name;
     }
 
     public User() {
+    }
+
+    public User(int id, String name, String password) {
+        this.id = id;
+        this.name = name;
+        this.password = password;
+    }
+
+    public User(String name, String password) {
+        this.name = name;
+        this.password = password;
     }
 
     public int getId() {
@@ -35,17 +42,6 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public User(int id, String name, String password) {
-        this.id = id;
-        this.name = name;
-        this.password = password;
-    }
-//hihi
-    public User(String name, String password) {
-        this.name = name;
-        this.password = password;
     }
 
     public String getPassword() {
