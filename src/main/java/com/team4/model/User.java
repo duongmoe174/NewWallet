@@ -10,15 +10,22 @@ public class User {
         this.name = name;
     }
 
-    public User(int id) {
-        this.id = id;
-    }
-
     public User(String name) {
         this.name = name;
     }
 
     public User() {
+    }
+
+    public User(int id, String name, String password) {
+        this.id = id;
+        this.name = name;
+        this.password = password;
+    }
+
+    public User(String name, String password) {
+        this.name = name;
+        this.password = password;
     }
 
     public int getId() {
@@ -37,6 +44,7 @@ public class User {
         this.name = name;
     }
 
+<<<<<<< HEAD
     public User(int id, String name, String password) {
         this.id = id;
         this.name = name;
@@ -48,6 +56,8 @@ public class User {
         this.password = password;
     }
 
+=======
+>>>>>>> 70285c122a6a14d34f74703d5a13330a70e63144
     public String getPassword() {
         return password;
     }
