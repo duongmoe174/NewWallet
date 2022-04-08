@@ -1,4 +1,4 @@
-package com.team4.controller;
+package com.team4.controller.tuanController;
 
 import com.team4.model.tuanModel.CurrencyWallet;
 import com.team4.model.tuanModel.UserWallet;
