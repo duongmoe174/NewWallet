@@ -1,16 +1,14 @@
 package com.team4.controller;
 
-import com.team4.model.CurrencyWallet;
-import com.team4.model.UserWallet;
-import com.team4.model.Wallet;
-import com.team4.service.wallet.currency.CurrencyService;
-import com.team4.service.wallet.currency.ICurrencyService;
-import com.team4.service.user.IUserService;
-import com.team4.service.user.UserService;
-import com.team4.service.wallet.IWalletService;
-import com.team4.service.wallet.WalletService;
-import com.team4.service.wallet.users.IUserWalletService;
-import com.team4.service.wallet.users.UserWalletService;
+import com.team4.model.tuanModel.CurrencyWallet;
+import com.team4.model.tuanModel.UserWallet;
+import com.team4.model.tuanModel.Wallet;
+import com.team4.service.tuanService.wallet.currency.CurrencyService;
+import com.team4.service.tuanService.wallet.currency.ICurrencyService;
+import com.team4.service.tuanService.wallet.IWalletService;
+import com.team4.service.tuanService.wallet.WalletService;
+import com.team4.service.tuanService.wallet.users.IUserWalletService;
+import com.team4.service.tuanService.wallet.users.UserWalletService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

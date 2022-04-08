@@ -1,7 +1,7 @@
-package com.team4.service.wallet.currency;
+package com.team4.service.tuanService.wallet.currency;
 
 import com.team4.config.SingletonConnection;
-import com.team4.model.CurrencyWallet;
+import com.team4.model.tuanModel.CurrencyWallet;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

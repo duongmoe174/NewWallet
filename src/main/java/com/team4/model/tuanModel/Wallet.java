@@ -1,4 +1,4 @@
-package com.team4.model;
+package com.team4.model.tuanModel;
 
 public class Wallet {
     private int id_wallet;
